@@ -1,0 +1,15 @@
+.Parent{
+    .box{
+        display: flex;
+        background: silver;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 20px;
+        div{
+            padding: 10px 50px;
+        }
+    }
+    .form{
+        padding: 20px;
+    }
+}
