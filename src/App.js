@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import Parent from './Components/Parent';
-
+import ControlledComponent from './Components/ControlledComponent';
+import Counter from './Components/Counter';
+import PureCounter from './Components/PureCounter';
+import RefExample from './Components/RefExample';
 function App() {
   return (
     <div className="App">
-      <Parent />
+      {/* <Counter /> */}
+      {/* <RefExample /> */}
+      <ControlledComponent />
     </div>
   );
 }
