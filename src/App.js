@@ -1,15 +1,14 @@
-import ControlledComponent from './Components/ControlledComponent';
-import Counter from './Components/Counter';
-import PureCounter from './Components/PureCounter';
-import RefExample from './Components/RefExample';
+import React from 'react'
+import CallbackRefComp from './Components/CallbackRefComp';
+import RefForwording from './Components/RefForwording';
+import RefToClassComp from './Components/RefToClassComp';
+
 function App() {
   return (
-    <div className="App">
-      {/* <Counter /> */}
-      {/* <RefExample /> */}
-      <ControlledComponent />
+    <div style={{margin: '20px'}}>
+      <RefForwording />
     </div>
-  );
+  )
 }
 
 export default App;
