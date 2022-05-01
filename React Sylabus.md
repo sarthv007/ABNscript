@@ -31,7 +31,17 @@ React.memo
 Session 24/04/2022
 Pure Component
 React.memo
-Ref in react
 
+Ref in react also know as legacy string api which is not recommended
+
+Callback ref
+ref to class component
+ref forwarding in react
+
+=============
+Portals
+Error Bounderies
+HOC
+Render Props
 
 
