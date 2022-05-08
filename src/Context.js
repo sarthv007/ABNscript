@@ -1,2 +1,6 @@
-import React from 'react';
-export const UserContext = React.createContext({users: []});
+import React from "react";
+
+const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
+export default UserContext;
