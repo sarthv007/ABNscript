@@ -1,0 +1,13 @@
+.header {
+  background: silver;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  background: silver;
+}
+
+.container {
+  padding: 20px;
+}

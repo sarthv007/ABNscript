@@ -1,5 +1,5 @@
-es6 basics
-======================
+# es6 basics
+
 React js Sylabus
 React introduction
 folder structure
@@ -44,4 +44,7 @@ Error Bounderies
 HOC
 Render Props
 
-
+=================
+Context
+Router
+Http Fetch Api and axios library
