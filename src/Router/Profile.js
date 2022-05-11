@@ -96,6 +96,7 @@ function Profile(props) {
 
         let response = await result.json();
         console.log(response);
+        setPosts(response);
       } catch (error) {
         console.log(error);
       }
