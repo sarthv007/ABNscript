@@ -1,20 +1,14 @@
 import React from "react";
-// import Child from "./Components2/Child";
-import Content from "./Components2/Content";
-import Footer from "./Components2/Footer";
-import Header from "./Components2/Header";
-// import Parent from "./Components2/Parent";
-import Root from "./Router/Root";
+import Counter from "./Components/Counter";
+import TitleComponet from "./Hooks/TitleComponet";
+//import Counter from "./Hooks/Counter";
 
-function App(props) {
+function App() {
   return (
     <>
-      <div>
-        {/* <Header />
-        <Content />
-        <Footer /> */}
-        <Root />
-      </div>
+      {/* <Counter /> */}
+      {/* <Counter /> */}
+      <TitleComponet />
     </>
   );
 }

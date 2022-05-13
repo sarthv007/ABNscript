@@ -1,7 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 
-function ContactUs() {
-  return <div>ContactUs is Loaded</div>;
+class ContactUs extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0,
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      count: this.state.count + 1000,
+    });
+  }
+
+  render() {
+    return <div>Count:{this.state.count}</div>;
+  }
 }
 
 export default ContactUs;

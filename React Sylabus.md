@@ -52,3 +52,23 @@ Http Fetch Api and axios library
 React Router
 Fetch api and axios library
 Promise and Async Await
+
+===================
+Hooks
+Types of Hooks
+useState
+useEffect
+
+useReducer
+userRef
+useContext
+
+useMemo
+useCallback
+
+useSelector
+useDispatch
+
+useParams
+useHistory
+custom hooks as well
