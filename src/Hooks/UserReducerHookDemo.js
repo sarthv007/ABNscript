@@ -1,9 +1,6 @@
 import React, { useReducer } from "react";
 
 const CounterReducer = (state, action) => {
-  console.log("state", state);
-  console.log("action", action);
-
   if (action.type === "INCREMENT") {
     return {
       count: state.count + 1,

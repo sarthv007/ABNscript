@@ -1,8 +1,13 @@
 import React from "react";
 
-function Paragraph() {
+function Paragraph(props) {
   console.log("Paragraph running");
-  return <div>Lets do something different</div>;
+
+  return (
+    <div>
+      {props.text}| {props.name}
+    </div>
+  );
 }
 
 export default Paragraph;

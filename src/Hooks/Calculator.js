@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 
 const Calculator = () => {
   const [count, setCount] = useState(0);
@@ -6,6 +6,10 @@ const Calculator = () => {
 
   const calculation = useMemo(() => {
     expensiveCalculation(count);
+  }, [count]);
+
+  React.useEffect(() => {
+    alert("test");
   }, [count]);
 
   //const calculation = expensiveCalculation(count);

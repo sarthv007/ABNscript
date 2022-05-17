@@ -14,6 +14,7 @@ export class Counter extends Component {
   componentDidMount() {
     axios.get("https://jsonplaceholder.typicode.com/posts").then((result) => {
       console.log(result.data);
+
       this.setState({
         userList: result.data,
       });
