@@ -1,3 +1,11 @@
 body {
-  margin: 20% 40%;
+  margin: 0 40%;
+}
+
+#root {
+  border: 1px solid silver;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 5px;
 }

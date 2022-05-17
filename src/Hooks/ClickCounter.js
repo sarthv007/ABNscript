@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import useCounter from "./useCounter";
+import "./ClickCounter.scss";
 
 function ClickCounter() {
   const [counter, incrementCounter] = useCounter(0);
