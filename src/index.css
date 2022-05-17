@@ -1,8 +1,9 @@
 body {
-  margin: 0 40%;
+  margin: 0 33%;
 }
 
 #root {
+  width: 550px;
   border: 1px solid silver;
   padding: 20px;
   text-align: center;
