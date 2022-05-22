@@ -1,22 +1,8 @@
-let initialState = {
-  counter: 0,
-  users: [],
-};
+import { combineReducers } from "redux";
+import counterReducer from "./counterReducer";
+import usersReducer from "./usersReducer";
 
-const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "INCREMENT":
-      return {
-        counter: state.counter + action.payload,
-      };
-    case "DECREMENT":
-      return {
-        counter: state.counter - action.payload,
-      };
-
-    default:
-      return state;
-  }
-};
-
-export default rootReducer;
+export const rootReducer = combineReducers({
+  counterReducer: counterReducer,
+  usersReducer: usersReducer,
+});

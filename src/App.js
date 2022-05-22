@@ -3,6 +3,7 @@ import ComponentA from "./Components/ComponentA";
 import Counter from "./Components/Counter";
 import ReduxCounterApp from "./Components/ReduxCounterApp";
 import ReduxIncrementCounter from "./Components/ReduxIncrementCounter";
+import UserList from "./Components/UserList";
 import UserContext, { ChannelContext } from "./Context";
 import Calculator from "./Hooks/Calculator";
 import ClickCounter from "./Hooks/ClickCounter";
@@ -20,8 +21,8 @@ import UserRefDemo from "./Hooks/UserRefDemo";
 function App() {
   return (
     <>
-      <ReduxCounterApp />
-      {/* <ReduxIncrementCounter /> */}
+      {/* <ReduxCounterApp /> */}
+      <UserList />
       {/* <Counter /> */}
       {/* <Counter /> */}
       {/* <TitleComponet /> */}

@@ -1,5 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import incrementAction, {
+  asyncDecrementAction,
+  decrementAction,
+} from "../Actions/CounterActions";
 import CounterSelector from "../Selectors";
 
 function ReduxIncrementCounter(props) {
@@ -7,27 +11,31 @@ function ReduxIncrementCounter(props) {
 
   const dispatch = useDispatch();
 
-  const incrementCount = () => {
-    dispatch({ type: "INCREMENT", payload: 1 });
-  };
+  // const incrementCount = () => {
+  //   dispatch(incrementAction(1));
+  // };
 
-  const incrementCountBy5 = () => {
-    dispatch({ type: "INCREMENT", payload: 5 });
-  };
+  // const incrementCountBy5 = () => {
+  //   dispatch(incrementAction(5));
+  // };
 
-  const decrementCount = () => {
-    dispatch({ type: "DECREMENT", payload: 1 });
-  };
+  // const decrementCount = () => {
+  //   dispatch(decrementAction(1));
+  // };
 
-  console.log("Components data using redux", counter);
+  console.log("Functional Components data using redux", counter);
 
   return (
     <>
       <h2>Counter: {counter}</h2>
       <br />
-      <button onClick={incrementCount}>Increment</button>
-      <button onClick={decrementCount}>Decrement</button>
-      <button onClick={incrementCountBy5}>Increment By 5</button>
+      <button onClick={() => dispatch(incrementAction(1))}>Increment</button>
+      <button onClick={() => dispatch(asyncDecrementAction(1))}>
+        Decrement
+      </button>
+      <button onClick={() => dispatch(incrementAction(5))}>
+        Increment By 5
+      </button>
     </>
   );
 }
